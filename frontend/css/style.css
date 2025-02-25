@@ -1,0 +1,135 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 1200px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.input-section {
+    flex: 1;
+    padding-right: 20px;
+    border-right: 2px solid #eee;
+}
+
+.results-section {
+    flex: 2;
+    padding-left: 20px;
+    display: none;
+    /* Initially hidden */
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border-color: #ff758c;
+}
+
+button {
+    background: #ff758c;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #ff416c;
+}
+
+#loading {
+    display: none;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ff758c;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
+#results {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.comment-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    transition: transform 0.2s;
+}
+
+.comment-card:hover {
+    transform: translateY(-5px);
+}
+
+.comment-author {
+    font-weight: bold;
+    color: #ff758c;
+}
+
+.comment-text {
+    margin: 10px 0;
+    color: #333;
+    word-wrap: break-word;
+}
+
+.comment-likes {
+    font-size: 14px;
+    color: #666;
+}
+
+.chart-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}

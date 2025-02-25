@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+torch
+tiktoken
+pydantic
+requests
+youtube_dl
+pandas
+numpy

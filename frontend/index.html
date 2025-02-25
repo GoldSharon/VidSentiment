@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Sentiment Analyzer</title>
+    <style>
+        
+    </style>
+    <link rel="stylesheet" href="css//style.css">
+    <script src="js//script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Input Section -->
+        <div class="input-section">
+            <h1>YouTube Sentiment Analyzer</h1>
+            <input type="text" id="videoLink" placeholder="Enter YouTube video link...">
+            <button onclick="analyzeComments()">Analyze</button>
+            <div id="loading">Analyzing... This may take a few moments.</div>
+        </div>
+
+        <!-- Results Section -->
+        <div class="results-section" id="resultsSection">
+            <div id="results"></div>
+        </div>
+    </div>
+
+</body>
+</html>
