@@ -17,7 +17,7 @@ VIDSENTIMENT is a web-based application that performs sentiment analysis on YouT
 - **Backend**: FastAPI  
 - **Frontend**: HTML, CSS, JavaScript  
 - **Cloud Deployment**: AWS EC2  
-- **Visualization**: Matplotlib, Seaborn  
+- **Visualization**:  Chart.js
 
 ## 📂 Project Structure  
 ```
